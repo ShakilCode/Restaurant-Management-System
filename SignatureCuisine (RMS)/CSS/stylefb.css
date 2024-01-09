@@ -1,0 +1,101 @@
+/* CSS/stylefb.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-size: large;
+}
+
+.h1_tit {
+  text-align: center;
+  margin-top: 50px;
+  color: #3498db;
+}
+
+.fb_class {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.fields {
+  margin-bottom: 20px;
+}
+
+.name,
+.feedbk {
+  margin-bottom: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.fb_input_name,
+.fb_input_feedbk {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.just_msg {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn_fb {
+  text-align: center;
+}
+
+.fb_input_btn1,
+.fb_input_btn2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fb_input_btn1:hover,
+.fb_input_btn2:hover {
+  background-color: #2980b9;
+}
+
+/* Animation */
+.fb_class {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation for a subtle effect */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

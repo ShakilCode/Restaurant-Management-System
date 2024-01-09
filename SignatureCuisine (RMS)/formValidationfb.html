@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  
+      <!-- Call the CSS -->
+      <link rel="stylesheet" href="CSS/stylefb.css">
+
+      <!-- Add icon to our website -->
+      <link rel="icon" href="./Pictures/icon.png" type="icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add feedback</title>
+</head>
+<body>
+
+    <h1 class="h1_tit">User feedback form</h1>
+        <h2>Fill the fields and submit</h2>
+        
+
+        <div class="fb_class">
+
+          <form name='feedback' method="post" action="displayDatafb.php" 
+          onSubmit="return formValidation();">
+
+              <div class="fields">
+
+                <div class="name">
+                  <li><label for="username">Name:</label></li>
+                  <input class="fb_input_name" type="text" name="username" size="50" />
+                </div>
+
+                <div class="feedbk">
+                  <li><label for="feedbackk">Type your feedback</label></li>
+                  <input class="fb_input_feedbk" type="text" name="feedbackk" size="50" />
+                </div>
+
+              </div>
+
+          <div class="just_msg">
+              Click the submit, after fill the form
+          </div>
+
+          <div class="btn_fb">
+            <input class="fb_input_btn2" type="reset" name="reset" id="reset" value="Reset" /> 
+            <input class="fb_input_btn1"  type="submit" name="submit" value="Submit" />
+          </div>
+
+          </form>
+
+        </div>
+        
+
+    
+</body>
+</html>

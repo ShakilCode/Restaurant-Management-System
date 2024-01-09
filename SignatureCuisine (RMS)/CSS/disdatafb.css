@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styles */
+  .dis_data_fb_cls {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 40px;
+    margin-top: 210px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .dis_data_fb_cls span{
+    color: red;
+  }
+    
+  
+  /* Button Styles */
+  .display_btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .display_btn:hover {
+    background-color: #006305;
+  }
+  
+  
+  /* Animation for the container */
+  .dis_data_fb_cls {
+    animation: fadeInUp 0.6s ease;
+  }
+  
+  /* Animation for the button */
+  .btn_cls_disfb {
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+  }
+
+
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply Animations */
+  .dis_data_fb_cls,
+  .btn_cls_disfb {
+    animation: fadeIn 1s;
+  }
+  
+  .dis_data_fb_cls {
+    animation: slideInFromBottom 1s;
+  }

@@ -1,0 +1,111 @@
+/* CSS for the user page */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.content {
+   text-align: center;
+   background-color: #ffffff;
+   padding: 40px;
+   border-radius: 30px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+   margin: 0;
+   font-size: 24px;
+   color: #333333;
+}
+
+h1 {
+   margin: 10px 0;
+   font-size: 36px;
+   color: #007bff;
+}
+
+span {
+   color: #ff4500;
+}
+
+p {
+   color: #666666;
+   font-size: 25px;
+}
+
+p span{
+    color: #A076F9;
+}
+
+.btn {
+   display: inline-block;
+   margin: 10px;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   color: #ffffff;
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #007bff;
+}
+
+/* Animation for the welcome message */
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+h1 span {
+   animation: fadeIn 3s;
+}
+
+/* Animation for the buttons */
+@keyframes slideIn {
+   from { transform: translateX(-100px); opacity: 0; }
+   to { transform: translateX(0); opacity: 1; }
+}
+
+.btn {
+   animation: slideIn 1.5s forwards;
+}
+
+/* Additional CSS for responsiveness */
+
+
+
+
+/* CSS for the user page */
+  h1 span {
+    color: #e67e22;
+  }
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6eb6e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+
+

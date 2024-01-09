@@ -1,0 +1,1258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* headerbar bar icons are hidden it will display when the website size equales to the tablet size*/
+.headerbar {
+    display: none;
+}
+
+
+/* This is thar 3 dot icon and X mark when the website size equales to the tablet size */
+.bar {
+    font-size: 18px;
+    display: none;
+}
+
+
+/* This is header of our website include the navigation bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color: #AA77FF;
+    border-bottom: 2px solid rgb(252, 196, 132);
+    box-shadow: 0 2px 20px rgb(253, 124, 124);
+}
+
+
+/* This is navigation bar order like horizontal */
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+
+/* This is hover color of navigation */
+.header ul li:hover {
+    color: #FFB84C;
+}
+
+.header ul li i:hover {
+    color: #C9EEFF;
+}
+
+
+/* This is keep space between navigation and that top after line design */
+.nav ul li {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Pangolin', cursive;
+}
+
+
+/* This is the line design top of the navigation bar */
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #AAE3E2;
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    transition: 0.8s;
+}
+
+.nav ul li:hover:after{
+    width: 100%;
+}
+
+.account {
+    flex: 0.1;
+}
+
+.account ul {
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li {
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.bar i:hover {
+    color: rgb(253, 57, 8);
+}
+
+
+
+
+
+/* Home page  */
+/* This CSS code for the background of home */
+.home {
+    background-color: #C9EEFF;
+    padding: 0 7vw;
+}
+
+
+/* main slide */
+/* This for the main slide h1 and the paragraph */
+.main_slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.main_slide div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+.main_slide div:nth-child(1) {
+    padding-top: 20px;
+    flex: 1;
+    font-size: 30px;
+}
+
+.main_slide div:nth-child(1) h1{
+font-family: 'Tektur', cursive;
+}
+
+.main_slide div:nth-child(1) p {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    padding: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main_slide div:nth-child(1) .span-h1 {
+    color: #AA77FF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(253, 176, 34);
+    font-family: 'Mynerve', cursive;
+}
+
+
+/* Fade in on hover the image */
+.food_plate_2 {
+    position: relative;
+  }
+  
+  .food_plate_2 img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .food_plate_2:hover img {
+    opacity: 0.7;
+  }
+
+  .food_plate_2 {
+    overflow: hidden;
+  }
+  
+
+  /* Zoom the image */
+  .food_plate_2 img {
+    transition: transform 0.3s ease;
+  }
+  
+  .food_plate_2:hover img {
+    transform: scale(1.2);
+  }
+  
+/* Animation for the image */
+  .food_plate_3 {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+
+  /* Rotate the food image */
+  .food_plate_3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Optional, creates a circular image */
+    animation: rotate 5s infinite linear; /* Adjust the animation duration and type */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(13deg);
+    }
+  }
+
+
+/* Animation for the h1 on the main slide */
+.main_slide_h1 {
+    display: inline-block;
+    opacity: 0; /* Initially, the letters are transparent */
+    animation: slideIn 3s forwards; /* Apply the animation to each letter */
+    animation-delay: calc(0.2s * var(--index)); /* Delay the animation based on the index of the letter */
+}
+
+/* Define the keyframes animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Animation for the paragraph on the main slide */
+.main_slide_p1 {
+    display: inline-block;
+    opacity: 0; /* Initially, the letters are transparent */
+    animation: slideIn 5s forwards; /* Apply the animation to each letter */
+    animation-delay: calc(0.2s * var(--index)); /* Delay the animation based on the index of the letter */
+}
+
+/* Define the keyframes animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Button CSS */
+
+.red_btn {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    background-color: #FF0060;
+    border-radius: 5px;
+    border: 1px solid #FF0060;
+    box-shadow: 0 10px 15px #FF0060;
+    transition: 0.6s;
+}
+
+.red_btn i {
+    color: white;
+}
+
+.red_btn:hover {
+    background-color: white;
+    box-shadow: 0 2px 15px #FF0060;
+    border: 1px solid #FF0060;
+    color: #FF0060;
+}
+
+.red_btn:hover i {
+    color: #FF0060;
+}
+
+
+
+/* Section 2 */
+
+.food_items_main{
+    background-color: #9336B4;
+}
+
+.food-items {
+    margin: 0 0;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    background-color: #E4A5FF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.food-items .item h3{
+    font-family: 'Dancing Script', cursive;
+}
+
+.item {
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+
+.item div {
+    height: 160px;
+}
+
+.item img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.item .red_btn {
+    width: 120px;
+    line-height: 35px;
+}
+
+
+/* Section 3 */
+
+.main_slide2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D7BBF5;
+}
+
+.foodimg {
+    flex: 0.5;
+}
+
+.foodimg img {
+    max-width: 500px;
+    width: 45vw;
+}
+
+.question {
+    flex: 0.5;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.question h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #6528F7;
+    font-family: 'PT Serif', serif;
+}
+
+.q-ans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.q-ans div:first-child {
+    padding: 10px;
+    border-radius: 50%;
+    height: 65px;
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.q-ans img {
+    width: 45px;
+}
+
+.q-ans div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.q-ans div:nth-child(2) p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.question .q-ans h4{
+    color: #FF8551;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+}
+
+.question .q-ans .para{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+}
+
+.main_slide2 .Contact_div .Contact_h1{
+    color: #068FFF;
+    padding-bottom: 10px;
+}
+
+.Contact_div .ad_name .sp_cntctus{
+    color: red;
+}
+
+
+/* Section 4 */
+
+.main_slide3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1000px;
+    background-color: #D7BBF5;
+}
+
+.main_slide3 .fav-head {
+    text-align: center;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.main_slide3 .fav-head h3 {
+    font-size: 50px;
+    padding: 20px 0;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0; /* Initially, the letters are transparent */
+    animation: slideIn 3s forwards; /* Apply the animation to each letter */
+    animation-delay: calc(0.2s * var(--index)); /* Delay the animation based on the index of the letter */
+}
+
+.main_slide3 .fav-head p {
+    /* Triple color animation */
+    font-weight: bold;
+    animation: runningAnimation 5s linear infinite;
+    background-image: linear-gradient(to right, #461959, #7A316F, #CD6688); /* Set the colors you want to run forward */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0; /* Initially, the letters are transparent */
+    animation: slideIn 3s forwards; /* Apply the animation to each letter */
+    animation-delay: calc(0.2s * var(--index)); /* Delay the animation based on the index of the letter */
+}
+
+@keyframes runningAnimation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
+.main_slide3 .fav-food {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.main_slide3 .fav-food .item {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(119, 119, 119, 0.438);
+}
+
+.main_slide3 .fav-food .item {
+    width: 220px;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_slide3 .fav-food .item h3{
+    color: red;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.main_slide3 .fav-food .item p{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #068FFF;
+}
+
+.main_slide3 .fav-food .item div {
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-food .item img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.main_slide3 .fav-price {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main_slide3 .dsgn {
+    background-color: #D7BBF5;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+
+/* Section 6 */
+
+.letter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.letter-head {
+    flex: 0.5;
+}
+
+.letter-head h2 {
+    font-size: 30px;
+}
+
+.letter-head span {
+    color: red;
+}
+
+.letter-input {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex: 0.5;
+}
+
+.letter-input div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 219, 185);
+}
+
+.letter-input input {
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 219, 185);
+}
+
+.letter-input .red_btn {
+    margin: 0;
+    font-size: 18px;
+    box-shadow: none;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* Footer Start here  */
+
+.footer {
+    padding: 60px 0;
+    border-top: 2px solid rgb(252, 184, 107);
+    background-color: rgb(252, 222, 195);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-1 .logo img {
+    width: 200px;
+}
+
+.footer-1 p {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    color: rgb(255, 137, 2);
+}
+
+.footer-2 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-2 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-2 img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+
+/* Signup/signin Form */
+
+.sign {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-box {
+    transition: all 0.4s;
+    background-color: white;
+    max-width: 500px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 35px;
+    transform: scale(0);
+}
+
+.sign-box h3 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 72, 0);
+    padding-bottom: 20px;
+}
+
+.sign-box form input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+}
+
+.sign-box .signin form input {
+    margin-bottom: 20px;
+}
+
+.sign-box .signin form input:last-of-type {
+    margin-top: 20px;
+}
+
+.sign-box form input:last-of-type {
+    background-color: rgb(253, 128, 78);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 30px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.sign-box form input:last-of-type:hover {
+    background-color: rgb(253, 99, 38);
+}
+
+.sign-box form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sign-box p {
+    font-size: 13px;
+    color: rgb(252, 30, 30);
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sign-box p:hover {
+    text-decoration: underline;
+}
+
+.sign .bar {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.signin {
+    display: none;
+}
+
+
+/*Book table page CSS*/
+
+.table {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(../images/table2.jpg);
+}
+
+.table .sign {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table .sign-box {
+    background-color: white;
+    max-width: 500px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 35px;
+    padding-bottom: 10px;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.384);
+}
+
+.table .signup h3 {
+    text-align: left;
+}
+
+
+/* Food menu page CSS*/
+
+.menu1 {
+    padding: 100px 0;
+    padding-top: 50px;
+}
+
+.menu h1 {
+    font-size: 3rem;
+    font-family: cursive;
+    text-align: center;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.menu .fav-food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu .item {
+    background-color: white;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    box-shadow: 0 2px 5px rgb(53, 0, 0);
+    cursor: pointer;
+}
+
+.menu .item div {
+    width: 100%;
+}
+
+.menu .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgb(53, 0, 0);
+}
+
+.menu .item div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .item h3 {
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.menu .item p {
+    font-size: 12px;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.menu .item .fav-price {
+    font-size: 17px;
+    color: red;
+    padding-bottom: 10px;
+    text-align: right;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* This code for the welcome page */
+.w_banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../Pictures/welcome.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.w_content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.w_content h1{
+    font-size: 60px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: rgb(208, 107, 255);
+    font-family: 'Tektur', cursive;
+}
+
+.W_page_span_h1{
+    text-shadow: 4px 2px 4px #fff;
+    animation: color 8s infinite;
+    font-family: 'Tektur', cursive;
+}
+
+/* To change colors in Res2rent word */
+@keyframes color{
+    0% {color: #FF9B9B;}
+    10% {color: #fabc71;}
+    20% {color: #f4f13d;}
+    30% {color: #7bf928;}
+    40% {color: #9681EB;}
+    50% {color: #45CFDD;}
+    60% {color: #FBD85D;}
+    70% {color: #47b0b7;}
+    80% {color: #f68eb4;}
+    90% {color: #F266AB;}
+    100% {color: #FF6969;}
+}
+
+.w_content p{
+    margin: 20px auto;
+    margin-top: 50px;
+    font-weight: 100;
+    line-height: 25px;
+    color: #f5d6ff;
+    font-size: 20px;
+    font-family: 'Tektur', cursive;
+}
+
+.W_page_btn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 40px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #d016ff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 15px #d016ff;
+}
+
+.W_page_span{
+    background: #d016ff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.W_page_btn:hover .W_page_span{
+    width: 100%;
+}
+
+.W_page_btn:hover{
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .btn_abtus_to_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .btn_abtus_to_home a {
+    text-decoration: none;
+  }
+  .btn_abtus_to_home button {
+    background-color: #0c620f;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 80px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .btn_abtus_to_home button:hover {
+    background-color: #2ec836;
+  }
+
+
+
+/* CSS code for Tablet */
+
+@media only screen and (max-width: 768px) {
+    .header .nav,
+    .header .account {
+        display: none;
+        /* header for laptop hidden */
+    }
+    .search {
+        width: 60vw;
+    }
+    .bar {
+        display: block;
+        cursor: pointer;
+    }
+    /* Hidden headerbar  */
+    .headerbar {
+        overflow: hidden;
+        transition: right 0.5s;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        right: -100%;
+        background-color: rgb(252, 231, 216);
+        height: 100vh;
+    }
+    .headerbar .nav,
+    .headerbar .account {
+        display: block;
+        font-size: 18px;
+    }
+    .bar .fa-xmark {
+        display: none;
+        cursor: pointer;
+        top: 20px;
+        right: 5vw;
+        position: absolute;
+        font-size: 25px;
+    }
+    .headerbar .nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .headerbar .nav li {
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px rgb(253, 193, 169);
+        font-size: 15px;
+        margin-top: 5px;
+        transition: all 0.7s;
+    }
+    .headerbar .account {
+        line-height: 40px;
+        margin-top: 60px;
+        background-color: rgb(252, 210, 182);
+        padding: 15px;
+    }
+    .headerbar .account ul {
+        justify-content: space-between;
+    }
+    /* Section 3 */
+    .foodimg {
+        flex: 1;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .foodimg img {
+        width: 70vw;
+    }
+    .question {
+        flex: 1;
+        margin-top: 30px;
+    }
+    .question h2 {
+        font-size: 25px;
+    }
+    .q-ans div:nth-child(2) p {
+        font-size: 11px;
+    }
+    /* Section 4 */
+    .main_slide3 {
+        margin-top: 100px;
+    }
+    .main_slide3 .dsgn {
+        height: 60%;
+    }
+    .main_slide3 .fav-head {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /* Section 5 */
+    .main_slide4 {
+        margin-top: 150px;
+    }
+    .main_slide4 .chef-feed {
+        flex: 1;
+    }
+    .main_slide4 .chef {
+        flex: 1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .main_slide4 .chef img {
+        width: 80vw;
+    }
+    /* Section 6 */
+    .letter-head h2 {
+        font-size: 20px;
+    }
+    .letter-input input {
+        font-size: 12px;
+        padding: 15px;
+        width: 50vw;
+    }
+    .letter-input .red_btn {
+        line-height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+    /* Footer  */
+    .footer .footer-1 div {
+        margin: 0;
+    }
+    .footer div {
+        margin-bottom: 40px;
+    }
+    /* Signup/signin form  */
+    .sign-box h3 {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    #x-sign-mb {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .sign-box form input:last-of-type:active {
+        background-color: rgb(253, 99, 38);
+    }
+}
+
+
+/* CSS code for Mobile  */
+
+@media only screen and (max-width: 550px) {
+    /* Header  */
+    .headerbar .nav li {
+        width: 96vw;
+    }
+    .headerbar {
+        width: 100%;
+        right: -100%;
+    }
+    .search {
+        width: 60vw;
+    }
+    /* Section 1 */
+    .main_slide div:nth-child(1) {
+        font-size: 18px;
+    }
+    .main_slide div:nth-child(1) p {
+        padding-top: 5px;
+        margin: 10px 0;
+        font-size: 11px;
+    }
+    /* Button  */
+    .red_btn {
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .main_slide div:nth-child(1) span {
+        text-underline-offset: 5px;
+    }
+    .main_slide div:nth-child(2) img {
+        width: 70vw;
+    }
+    /* Section 2 */
+    .food-items {
+        padding: 10px 0;
+    }
+    .item {
+        width: 60%;
+        padding: 30px 5px;
+    }
+    .item h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    /* Section 4 */
+    .main_slide3 .fav-head {
+        width: 100%;
+    }
+    .main_slide3 .fav-head h3 {
+        font-size: 25px;
+    }
+    .main_slide3 .fav-head p {
+        font-size: 11px;
+    }
+    .main_slide3 .dsgn {
+        display: none;
+    }
+    /* Section 5 */
+    .main_slide4 .chef-vic div p {
+        display: none;
+    }
+    /* Section 6 */
+    .letter {
+        justify-content: center;
+    }
+    .letter-head {
+        flex: 1;
+        text-align: center;
+    }
+    /* Footer  */
+    .footer div:last-child {
+        margin-bottom: 0;
+    }
+    .footer {
+        padding-bottom: 25px;
+    }
+    .footer-2 h2 {
+        font-size: 20px;
+    }
+    /* signup form  */
+    .sign {
+        padding: 5vw;
+    }
+    .sign-box {
+        width: 80vw;
+        border-radius: 20px;
+        padding: 25px;
+        padding-bottom: 30px;
+    }
+    .sign-box h3 {
+        text-align: left;
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .sign-box form input {
+        font-size: 12px;
+    }
+    .sign-box .signin form input:last-of-type {
+        margin-top: 15px;
+    }
+    .sign-box form label {
+        font-size: 14px;
+    }
+    /*food menu page*/
+    .menu1 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .menu h1 {
+        font-size: 2.5rem;
+    }
+    .menu .item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: 85%;
+    }
+    .menu .item div {
+        width: 100%;
+    }
+    .menu .item h3 {
+        padding: 15px;
+        text-align: left;
+        padding-bottom: 0px;
+    }
+    .menu .item p {
+        font-size: 10px;
+        padding: 0 15px;
+        margin-top: 5px;
+    }
+    .menu .item .fav-price {
+        font-size: 13px;
+        color: red;
+        padding-bottom: 15px;
+    }
+    .menu .item:hover {
+        transform: scale(1);
+        box-shadow: 0 2px 5px rgb(53, 0, 0);
+    }
+}

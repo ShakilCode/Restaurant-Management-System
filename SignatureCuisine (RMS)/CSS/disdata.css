@@ -1,0 +1,55 @@
+/* disdata.css */
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.cls_data {
+  background-color: #72c2f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cls_data h2 {
+  color: #333;
+}
+
+.cls_data{
+  font-size: 20px;
+}
+
+.btn_cls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.display_btn {
+  padding: 10px 20px;
+  background-color: #c87fe6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 1s ease-in-out;
+}
+
+.display_btn:hover {
+  background-color: #8045a0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
