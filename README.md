@@ -35,3 +35,10 @@ The RMS is tailored for restaurant owners and staff who seek an efficient and in
 ## The first file to run the code
 
 "welcome.html" this is the file name you need to open first.
+
+## Used technologies
+- HTML
+- CSS
+- Bootstrap
+- PHP
+- MySQL
