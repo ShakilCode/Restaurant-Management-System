@@ -6,6 +6,8 @@ The Restaurant Management System (RMS) is a web-based application designed to st
 
 ## Features for Admins: 
 
+- Register and Login - Admin can register to the system and loging by giving registered email and password.
+  
 - View Orders: Addmin can view the all orders.
 
 - Delete Orders: Have the flexibility to remove orders as needed.
@@ -13,7 +15,9 @@ The Restaurant Management System (RMS) is a web-based application designed to st
 - View Feedbacks: Gain insights into customer satisfaction by reviewing feedback.
 
 
-## Features for Customers: 
+## Features for Customers:
+
+- Register and Login - Customer can register to the system and loging by giving registered email and password.
 
 - View menu: Customers can view the food manu.
 
